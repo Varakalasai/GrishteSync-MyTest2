@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+    <main>
+        <section id="charts">
+            <h2>Charts</h2>
+            <div id="chart1"></div>
+            <div id="chart2"></div>
+        </section>
+        <section id="crud">
+            <h2>CRUD Operations</h2>
+            <form id="create-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <input type="submit" value="Create">
+            </form>
+            <form id="read-form">
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id"><br><br>
+                <input type="submit" value="Read">
+            </form>
+            <form id="update-form">
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id"><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age"><br><br>
+                <input type="submit" value="Update">
+            </form>
+            <form id="delete-form">
+                <label for="id">ID:</label>
+                <input type="number" id="id" name="id"><br><br>
+                <input type="submit" value="Delete">
+            </form>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="script.js"></script>
+<footer style="text-align: center; font-size: 0.7rem; color: #6c757d; margin-top: 2rem; padding: 1rem; border-top: 1px solid #dee2e6;">Made with ❤️ using <a href="https://suryasticsai.github.io/GrishteSync" target="_blank" style="color: #10b981;">GrishteSync</a> | Suryasticsai</footer>
+</body>
+</html>
